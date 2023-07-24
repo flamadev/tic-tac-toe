@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-120x120.png">
+    <script defer type="text/javascript" src="main.js"></script>
+    <script defer type="text/javascript" src="socket_client.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <title>Ta Te Ti</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <!-----------B O A R D----------------->
+    <main>
+        <div class="tateti-container">
+            <div class="container-results">
+                <p><span class="text-results"></span></p>
+            </div>
+            <div class="container-game">
+                <div id="board">
+                    <div id="0" class="square"></div>
+                    <div id="1" class="square"></div>
+                    <div id="2" class="square"></div>
+                    <div id="3" class="square"></div>
+                    <div id="4" class="square"></div>
+                    <div id="5" class="square"></div>
+                    <div id="6" class="square"></div>
+                    <div id="7" class="square"></div>
+                    <div id="8" class="square"></div>
+                </div>
+                <div class="container-buttons">
+                    <button type="button" id="start-button">Start</button>
+                    <button type="button" id="restart-button">Reset</button>
+                </div>
+            </div>
+            <div class="difficulty-level-container">
+                <form>
+                    <div>
+                        <input type="radio" id="easy" name="levels" value="easy" checked>
+                        <label for="huey">Fácil</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="levels" value="medium">
+                        <label for="dewey">Medio</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="heavy" name="levels" value="heavy">
+                        <label for="dewey">Difícil</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
